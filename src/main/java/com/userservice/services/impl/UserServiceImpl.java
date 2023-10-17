@@ -94,7 +94,6 @@ public class UserServiceImpl implements UserService {
         }
 
         user.setRoles(roles);
-
         String randomCode = RandomString.make(64);
         user.setVerificationCode(randomCode);
         user.setVerificationCodeGeneratedTime(LocalDateTime.now());
